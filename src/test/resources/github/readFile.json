@@ -1,0 +1,18 @@
+{
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "94b433642a56df22deac258768f222cf6f85693f",
+  "size": 9,
+  "url": "https://api.github.com/repos/b8b/cikit/contents/README.md?ref=master",
+  "html_url": "https://github.com/b8b/cikit/blob/master/README.md",
+  "git_url": "https://api.github.com/repos/b8b/cikit/git/blobs/94b433642a56df22deac258768f222cf6f85693f",
+  "download_url": "https://raw.githubusercontent.com/b8b/cikit/master/README.md",
+  "type": "file",
+  "content": "IyBjaUtpdA0K\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/b8b/cikit/contents/README.md?ref=master",
+    "git": "https://api.github.com/repos/b8b/cikit/git/blobs/94b433642a56df22deac258768f222cf6f85693f",
+    "html": "https://github.com/b8b/cikit/blob/master/README.md"
+  }
+}
