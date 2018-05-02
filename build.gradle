@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = "1.2.31"
+    ext.kotlin_version = "1.2.40"
 
     repositories {
         jcenter()
@@ -11,8 +11,8 @@ buildscript {
     }
 }
 
-group = "org.cikit"
-version = project.properties["VERSION"]
+group = "org.cikit.core"
+version = "CURRENT"
 
 apply plugin: "java"
 apply plugin: "kotlin"
@@ -32,6 +32,7 @@ repositories {
 dependencies {
     def logbackVersion = "1.2.3"
     def vertxVersion = "3.5.1"
+    def nettyVersion = "4.1.19.Final"
     def jacksonVersion = "2.9.2"
 
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -54,6 +55,9 @@ dependencies {
     compile("io.vertx:vertx-web:$vertxVersion")
 
     compile("ch.qos.logback:logback-classic:$logbackVersion")
+
+    runtimeOnly("io.netty:netty-transport-native-epoll:$nettyVersion:linux-x86_64")
+    runtimeOnly("io.netty:netty-transport-native-kqueue:$nettyVersion")
 
     testCompile("junit:junit:4.12")
     testCompile("com.atlassian.oai:swagger-request-validator-restassured:1.4.1")
